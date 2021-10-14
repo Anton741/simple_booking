@@ -27,7 +27,7 @@ export function loadCity(city, checkIN, days){
   checkOut.setDate(checkOut.getDate() + days);
   checkOut = checkOut.toISOString().slice(0,10)
   return async dispatch => {
-    const response = await fetch(`http://engine.hotellook.com/api/v2/cache.json?location=${city}&currency=rub&checkIn=${checkIN}&checkOut=${checkOut}&limit=100`)
+    const response = await fetch(`https://engine.hotellook.com/api/v2/cache.json?location=${city}&currency=rub&checkIn=${checkIN}&checkOut=${checkOut}&limit=100`)
     const json = await response.json()
     dispatch({type: LOAD_CITY, payload: json})
   }
