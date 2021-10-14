@@ -1,0 +1,7 @@
+export const USER_AUTHENTICATION = "USER_AUTHENTICATION"
+export const SHOW_ALERT = "SHOW_ALERT"
+export const SEARCH_HOTEL = "SEARCH_HOTEL"
+export const LOAD_CITY = "LOAD_CITY"
+export const ADD_BOOKMARK = "ADD_BOOKMARK"
+export const DELETE_BOOKMARK = "DELETE_BOOKMARK"
+export const SORTING = "SORTING"
